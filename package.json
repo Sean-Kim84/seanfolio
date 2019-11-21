@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "Sean's Portfolio",
   "main": "index.js",
+  "homepage": "https://seankim84.github.io/seanfolio",
   "scripts": {
     "sass": "node-sass -w sass/ -o dist/css/ --recursive",
     "dev": "live-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0"
   }
 }
