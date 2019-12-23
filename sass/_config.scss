@@ -3,6 +3,7 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url('../img/background.jpg');
 $home-image2: url('../img/aboutBackground.jpg');
+$home-image3: url('../img/work_background.jpg');
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -15,6 +16,7 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      
     }
 
     &:after {
@@ -49,6 +51,15 @@ $background-opacity: 0.9;
       z-index: -1;
       background: rgba($primary-color, $background-opacity);
 
+    }
+  }
+}
+
+@mixin background3 {
+  @if $show-home-image {
+    &#work {
+      background:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+      url($home-image3) center/cover no-repeat;
     }
   }
 }

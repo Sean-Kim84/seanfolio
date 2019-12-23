@@ -27,6 +27,7 @@
             line-height: 1;
             margin-bottom: 1rem;
         }
+        background: $primary-color;
     }
     ul.menu-nav,
     div.menu-branding {
@@ -77,4 +78,5 @@
     .projects {
       grid-template-columns: 1fr;
     }
+    background: $primary-color;
 }
