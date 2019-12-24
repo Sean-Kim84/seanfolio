@@ -203,7 +203,8 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #515151;
-    padding: 0.5rem;
+    padding: 1rem;
+    line-height: 1.5rem;
     border-bottom: #eece1a 5px solid; }
 
 #work {
@@ -290,7 +291,8 @@ main {
     background: #444; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 3rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -315,7 +317,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes .text-secondary {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 769px) {
   main#hom h1 {
